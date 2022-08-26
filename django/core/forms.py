@@ -9,14 +9,11 @@ class VoteForm(forms.ModelForm):
 
     user = forms.ModelChoiceField(
         widget=forms.HiddenInput,
-        queryset=get_user_model().
-            objects.all(),
-        disabled=True,
+        queryset=get_user_model().objects.all()
     )
     movie = forms.ModelChoiceField(
         widget=forms.HiddenInput,
         queryset=Movie.objects.all(),
-        disabled=True
     )
     value = forms.ChoiceField(
         label='Vote',

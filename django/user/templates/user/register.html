@@ -3,8 +3,9 @@
 {% block main %}
   <h1>Register for MyMDB</h1>
   <form method="post">
-    {{ form.as_p }}
+    {{ form.as_table }}
     {% csrf_token %}
+    <br>
     <button
         type="submit"
         class="btn btn-primary">
