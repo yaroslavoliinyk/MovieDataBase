@@ -66,5 +66,7 @@ class PersonAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Movie, MovieAdmin)
+
+
 admin.site.register(Person, PersonAdmin)
 
